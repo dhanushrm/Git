@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:layout_gravity="center_vertical"
+    
+    
+    tools:context=".MainActivity" >
+
+  <EditText
+        android:id="@+id/snamein"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/sname"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/sname"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/rnin"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/rn"
+        android:layout_alignBottom="@+id/rn"
+        android:layout_alignLeft="@+id/snamein"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Student Name"
+        android:textSize="18dp" />
+
+   	<Spinner
+   	    android:id="@+id/spinner1"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignLeft="@+id/b2"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_alignTop="@+id/Ctype" />
+
+   	<Button
+   	    android:id="@+id/b1"
+   	    android:layout_width="150dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignBaseline="@+id/b2"
+   	    android:layout_alignBottom="@+id/b2"
+   	    android:layout_toLeftOf="@+id/b2"
+   	    android:text="Complain" />
+
+   	<Button
+   	    android:id="@+id/b2"
+   	    android:layout_width="150dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentBottom="true"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_marginBottom="31dp"
+   	    android:text="Clear" />
+
+   	<EditText
+   	    android:id="@+id/et1"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="100dp"
+   	    android:layout_above="@+id/b1"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignRight="@+id/b2"
+   	    android:layout_marginBottom="22dp"
+   	    android:autoText="true"
+   	    android:ems="10"
+   	    android:inputType="textMultiLine" />
+
+   	<TextView
+   	    android:id="@+id/cpd"
+   	    android:layout_width="300dp"
+   	    android:layout_height="30dp"
+   	    android:layout_alignLeft="@+id/editText1"
+   	    android:layout_centerVertical="true"
+   	    android:text="Complaint Description:"
+   	    android:textSize="18dp" />
+
+   	<TextView
+   	    android:id="@+id/Ctype"
+   	    android:layout_width="150dp"
+   	    android:layout_height="30dp"
+   	    android:layout_alignLeft="@+id/rn"
+   	    android:layout_below="@+id/rn"
+   	    android:layout_marginTop="14dp"
+   	    android:text="Complaint Type:"
+   	    android:textSize="18dp" />
+
+   	<TextView
+   	    android:id="@+id/rn"
+   	    android:layout_width="120dp"
+   	    android:layout_height="30dp"
+   	    android:layout_alignLeft="@+id/sname"
+   	    android:layout_below="@+id/sname"
+   	    android:layout_marginTop="18dp"
+   	    android:text="Room No"
+   	    android:textSize="18dp" />
+
+  </RelativeLayout>  
+	
